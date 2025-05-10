@@ -23,18 +23,18 @@ import box_icon from "./box_icon.svg";
 import trust_icon from "./trust_icon.svg";
 import black_arrow_icon from "./black_arrow_icon.svg";
 import white_arrow_icon from "./white_arrow_icon.svg";
-import main_banner_bg from "./main_banner_bg.png";
-import main_banner_bg_sm from "./main_banner_bg_sm.png";
+import main_banner_bg from "./main_banner_bg.jpg";
+import main_banner_bg_sm from "./main_banner_bg.jpg";
 import bottom_banner_image from "./bottom_banner_image.png";
 import bottom_banner_image_sm from "./bottom_banner_image_sm.png";
 import add_address_iamge from "./add_address_image.svg";
-import organic_vegitable_image from "./organic_vegitable_image.png";
+import organic_vegitable_image from "./organic_vegitable_image2.png";
 import fresh_fruits_image from "./fresh_fruits_image.png";
-import bottles_image from "./bottles_image.png";
-import maggi_image from "./maggi_image.png";
-import dairy_product_image from "./dairy_product_image.png";
-import bakery_image from "./bakery_image.png";
-import grain_image from "./grain_image.png";
+import bottles_image from "./bottles_image2.png";
+import maggi_image from "./maggi_image2.png";
+import dairy_product_image from "./dairy_product_image2.png";
+import bakery_image from "./bakery_image2.png";
+import grain_image from "./grain_image2.png";
 import potato_image_1 from "./potato_image_1.png";
 import potato_image_2 from "./potato_image_2.png";
 import potato_image_3 from "./potato_image_3.png";
@@ -109,45 +109,45 @@ export const assets = {
 
 export const categories = [
   {
-    text: "Organic veggies",
+    text: "veggies",
     path: "Vegetables",
-    image: organic_vegitable_image,
+    image: fresh_fruits_image,
     bgColor: "#FEF6DA",
   },
   {
-    text: "Fresh Fruits",
+    text: "Fruits",
     path: "Fruits",
     image: fresh_fruits_image,
     bgColor: "#FEE0E0",
   },
   {
-    text: "Cold Drinks",
+    text: "green",
     path: "Drinks",
-    image: bottles_image,
+    image: fresh_fruits_image,
     bgColor: "#F0F5DE",
   },
   {
-    text: "Instant Food",
+    text: "jungli",
     path: "Instant",
-    image: maggi_image,
+    image: fresh_fruits_image,
     bgColor: "#E1F5EC",
   },
   {
-    text: "Dairy Products",
+    text: "cash",
     path: "Dairy",
-    image: dairy_product_image,
+    image: fresh_fruits_image,
     bgColor: "#FEE6CD",
   },
   {
-    text: "Bakery & Breads",
+    text: "indian",
     path: "Bakery",
-    image: bakery_image,
+    image: fresh_fruits_image,
     bgColor: "#E0F6FE",
   },
   {
-    text: "Grains & Cereals",
+    text: "foriegn",
     path: "Grains",
-    image: grain_image,
+    image: fresh_fruits_image,
     bgColor: "#F1E3F9",
   },
 ];
