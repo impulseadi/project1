@@ -16,7 +16,7 @@ import { stripeWebhooks } from "./controllers/order.controller.js";
 dotenv.config() 
 const app = express()
 const PORT = process.env.PORT || 4000
-const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins = ['https://project1-three-amber.vercel.app']
 
 app.post("/stripewebhook", express.raw({ type: 'application/json' }), stripeWebhooks)
 
