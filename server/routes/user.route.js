@@ -3,7 +3,7 @@ import { isAuth, login, logout, register, updateUser } from "../controllers/user
 import passport from "passport"
 import jwt from "jsonwebtoken"
 import upload from "../middlewares/upload.js"
-import authUser from "../middlewares/auth-user.js"
+import authUser from "../middlewares/authUser.js"
 
 const router = express.Router()
 

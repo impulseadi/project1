@@ -40,10 +40,13 @@ const Login = () => {
                 setUser(data.user)
                 setShowUserLogin(false)
             }else{
-                toast.error(data.message)
+                // toast.message("dfgh")
+                // toast.error(data.message)
+                console.log("error aya")
             }
 
         } catch (error) {
+            console.log("ddd")
             toast.error(error.response.data.message)
         }
 

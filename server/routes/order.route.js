@@ -1,6 +1,6 @@
 import express from "express"
-import authUser from "../middlewares/auth-user.js"
-import authSeller from "../middlewares/auth-seller.js"
+import authUser from "../middlewares/authUser.js"
+import authSeller from "../middlewares/authSeller.js"
 import { createOrderCOD, createStripeOrder, getAllOrders, getUserOrders } from "../controllers/order.controller.js"
 const router = express.Router()
 

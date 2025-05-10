@@ -14,6 +14,7 @@ const AddProduct = () => {
 
     const handleSubmit = async (e) => {
         try {
+            console.log("product ban gya add krna hai")
             e.preventDefault()
             const productData = {
                 name,
@@ -22,13 +23,17 @@ const AddProduct = () => {
                 price,
                 offerPrice,
             }
-
             const formData = new FormData()
+            
             formData.append('productData', JSON.stringify(productData))
+            
             for (let i = 0; i < files.length; i++) {
                 formData.append('images', files[i])
             }
+            
             const { data } = await axiosInstance.post("/product/add", formData)
+                                      console.log("add vala submit chala")
+
             if (data.success) {
                 toast.success(data.message)
                 setName("")
@@ -40,6 +45,8 @@ const AddProduct = () => {
             } else {
                 toast.error(data.message)
             }
+                          console.log("add vala submit chala")
+
 
         } catch (error) {
             toast.error(error.response.data.message)

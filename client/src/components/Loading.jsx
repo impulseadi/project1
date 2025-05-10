@@ -10,6 +10,7 @@ const Loading = () => {
     const paymentStatus = query.get('payment');
 
     useEffect(() => {
+        
         fetchUser(); 
     }, []);
     

@@ -1,6 +1,6 @@
 import express from "express"
 import { isASellerAuth, sellerLogin, sellerLogout } from "../controllers/seller.controller.js"
-import authSeller from "../middlewares/auth-seller.js"
+import authSeller from "../middlewares/authSeller.js"
 
 const router = express.Router()
 

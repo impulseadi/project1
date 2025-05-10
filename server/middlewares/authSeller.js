@@ -2,7 +2,8 @@ import jwt from "jsonwebtoken"
 
 const authSeller = (req, res, next) => {
     const { sellerToken } = req.cookies
-
+     
+    console.log("authSeller chla")
     if (!sellerToken) {
         return res.status(401).json({ success: false, message: "Not Authorized" })
     }
