@@ -73,18 +73,36 @@ import quinoa_image from "./quinoa_image.png";
 import brown_rice_image from "./brown_rice_image.png";
 import barley_image from "./barley_image.png";
 import empty_cart_icon  from "./empty_cart_icon.svg"
+import banner1 from "./banner1.jpg"
+import good_banner from "./good_banner.webp"
+import indoor1 from "./indoor1.png"
+import outdoor from "./outdoor.png"
+import flower1 from "./flower1.png"
+import air from "./air.png"
+import  medicinal_plants from "./medicinal_plants.png"
+import cactus from "./cactus.png"
+import bonsai from "./bonsai.png"
+import bottom_check from "./bottom_check.jpg"
+import bottom_final from "./bottom_final.jpg"
 export const assets = {
   logo,
   google_logo,
+  cactus,
   search_icon,
   remove_icon,
   empty_cart_icon,
+  bottom_final,
   arrow_right_icon_colored,
   star_icon,
+  outdoor,
+  air,
+  flower1,
   star_dull_icon,
   cart_icon,
   cart_icon_2,
   nav_cart_icon,
+  indoor1,
+  medicinal_plants,
   add_icon,
   refresh_icon,
   product_list_icon,
@@ -92,6 +110,8 @@ export const assets = {
   upload_area,
   profile_icon,
   menu_icon,
+
+  good_banner,
   close_icon,
   delivery_truck_icon,
   leaf_icon,
@@ -105,49 +125,53 @@ export const assets = {
   bottom_banner_image_sm,
   add_address_iamge,
   box_icon,
+  banner1,
+  bonsai,
 };
 
 export const categories = [
   {
-    text: "veggies",
+
+    text: "Indoor Plants",
     path: "Vegetables",
-    image: fresh_fruits_image,
+    image: indoor1,
     bgColor: "#FEF6DA",
   },
   {
-    text: "Fruits",
+    text: "Outdoor Plants",
     path: "Fruits",
-    image: fresh_fruits_image,
+    image: outdoor,
     bgColor: "#FEE0E0",
   },
   {
-    text: "green",
+    text: "Flower Plants",
     path: "Drinks",
-    image: fresh_fruits_image,
+    image: flower1,
     bgColor: "#F0F5DE",
   },
   {
-    text: "jungli",
+    text: "Air Purifier Plants",
     path: "Instant",
-    image: fresh_fruits_image,
+    image: air,
     bgColor: "#E1F5EC",
   },
   {
-    text: "cash",
+    text: "Medicinal Plants",
     path: "Dairy",
-    image: fresh_fruits_image,
+    image: medicinal_plants,
     bgColor: "#FEE6CD",
   },
   {
-    text: "indian",
+    text: "Cactus/Saculant Plant",
     path: "Bakery",
-    image: fresh_fruits_image,
+    image: cactus,
     bgColor: "#E0F6FE",
   },
   {
-    text: "foriegn",
+    text: "Bonsai Plants",
     path: "Grains",
-    image: fresh_fruits_image,
+    image: bonsai,
+>>>>>>> fcb18da (Initial commit with changes)
     bgColor: "#F1E3F9",
   },
 ];
@@ -188,17 +212,30 @@ export const features = [
   {
     icon: delivery_truck_icon,
     title: "Fastest Delivery",
+<<<<<<< HEAD
     description: "Groceries delivered in under 30 minutes.",
   },
   {
     icon: leaf_icon,
     title: "Freshness Guaranteed",
     description: "Fresh produce straight from the source.",
+=======
+    description: "Plants and Home Decor delivered fast",
+  },
+  {
+    icon: leaf_icon,
+    title: "Quality Guaranteed",
+    description: "Good Quality Products.",
+>>>>>>> fcb18da (Initial commit with changes)
   },
   {
     icon: coin_icon,
     title: "Affordable Prices",
+<<<<<<< HEAD
     description: "Quality groceries at unbeatable prices.",
+=======
+    description: "Quality at unbeatable prices.",
+>>>>>>> fcb18da (Initial commit with changes)
   },
   {
     icon: trust_icon,

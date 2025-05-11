@@ -16,7 +16,11 @@ import { stripeWebhooks } from "./controllers/order.controller.js";
 dotenv.config() 
 const app = express()
 const PORT = process.env.PORT || 4000
+<<<<<<< HEAD
 const allowedOrigins = ['https://project1-three-amber.vercel.app']
+=======
+const allowedOrigins = ['https://project1-tan-five.vercel.app']
+>>>>>>> fcb18da (Initial commit with changes)
 
 app.post("/stripewebhook", express.raw({ type: 'application/json' }), stripeWebhooks)
 
@@ -55,4 +59,8 @@ connectDB().then(() => {
     });
 }).catch((err) => {
     console.error("❌ Connetion error:", err);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> fcb18da (Initial commit with changes)
