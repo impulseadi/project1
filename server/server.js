@@ -16,14 +16,17 @@ import { stripeWebhooks } from "./controllers/order.controller.js";
 dotenv.config() 
 const app = express()
 const PORT = process.env.PORT || 4000
-const allowedOrigins = ['https://project1-three-amber.vercel.app']
+// const allowedOrigins = ['https://project1-three-sandy.vercel.app']
+//  const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins=process.env.AO
 
 app.post("/stripewebhook", express.raw({ type: 'application/json' }), stripeWebhooks)
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({ origin: allowedOrigins, 
+app.use(cors({ 
+    origin: allowedOrigins, 
     credentials: true,
      allowedHeaders: ['Content-Type', 'Authorization'] }))
 
@@ -54,5 +57,5 @@ connectDB().then(() => {
         console.log(`🚀 Server is running on ${PORT}`);
     });
 }).catch((err) => {
-    console.error("❌ Connetion error:", err);
+    console.error("❌ Connetion error :", err);
 });
