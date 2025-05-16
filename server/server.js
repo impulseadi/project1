@@ -1,7 +1,7 @@
-import cors from "cors"
 import express from "express"
 import dotenv from "dotenv"
 import cookieParser from "cookie-parser"
+import cors from "cors"
 import session from "express-session";
 import passport from "passport";
 import "./configs/passport.js";
@@ -15,28 +15,20 @@ import addressRoutes from "./routes/address.route.js"
 import { stripeWebhooks } from "./controllers/order.controller.js";
 dotenv.config() 
 const app = express()
-const allowedOrigins = [
-  'https://project1-tan-five.vercel.app',
-  'http://localhost:5173'
-];
 const PORT = process.env.PORT || 4000
+// const allowedOrigins = ['https://project1-three-sandy.vercel.app']
+//  const allowedOrigins = ['http://localhost:5173']
+const allowedOrigins=process.env.AO
+
 app.post("/stripewebhook", express.raw({ type: 'application/json' }), stripeWebhooks)
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({
-  origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl)
-    if (!origin || allowedOrigins.includes(origin)) {
-      return callback(null, true);
-    }
-    return callback(new Error('Not allowed by CORS'));
-  },
-  credentials: true,
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
-
+app.use(cors({ 
+    origin: allowedOrigins, 
+    credentials: true,
+     allowedHeaders: ['Content-Type', 'Authorization'] }))
 
 app.use(session({
     secret: process.env.JWT_SECRET,
@@ -65,5 +57,5 @@ connectDB().then(() => {
         console.log(`🚀 Server is running on ${PORT}`);
     });
 }).catch((err) => {
-    console.error("❌ Connetion error:", err);
+    console.error("❌ Connetion error :", err);
 });
