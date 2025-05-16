@@ -73,7 +73,7 @@ import quinoa_image from "./quinoa_image.png";
 import brown_rice_image from "./brown_rice_image.png";
 import barley_image from "./barley_image.png";
 import empty_cart_icon  from "./empty_cart_icon.svg"
-import banner1 from "./banner1.jpg"
+//import banner1 from "./banner1.jpg"
 import good_banner from "./good_banner.webp"
 import indoor1 from "./indoor1.png"
 import outdoor from "./outdoor.png"
@@ -84,6 +84,18 @@ import cactus from "./cactus.png"
 import bonsai from "./bonsai.png"
 import bottom_check from "./bottom_check.jpg"
 import bottom_final from "./bottom_final.jpg"
+import bottom_banner_sm1 from "./bottom_banner_sm1.jpg"
+import banner1 from "./banner1.jpg";
+import banner2 from "./banner2.jpg";
+import banner3 from "./banner3.jpg";
+import banner4 from "./banner4.jpg";
+import banner5 from "./banner5.jpg";
+
+import mobile1 from "./mobile1.jpg";
+import mobile2 from "./mobile2.jpg";
+import mobile3 from "./mobile3.jpg";
+import mobile4 from "./mobile4.jpg";
+import mobile5 from "./mobile5.jpg";
 export const assets = {
   logo,
   google_logo,
@@ -91,10 +103,13 @@ export const assets = {
   search_icon,
   remove_icon,
   empty_cart_icon,
+  desktop_banners: [banner1, banner2, banner3, banner4, banner5],
+  mobile_banners: [mobile1, mobile2, mobile3, mobile4, mobile5],
   bottom_final,
   arrow_right_icon_colored,
   star_icon,
   outdoor,
+  bottom_banner_sm1,
   air,
   flower1,
   star_dull_icon,
@@ -171,8 +186,7 @@ export const categories = [
     text: "Bonsai Plants",
     path: "Grains",
     image: bonsai,
->>>>>>> fcb18da (Initial commit with changes)
-    bgColor: "#F1E3F9",
+    bgColor: "#E0F6FE",
   },
 ];
 
@@ -207,35 +221,38 @@ export const footerLinks = [
     ],
   },
 ];
+// export const imagess = {
+//   desktop_banners: [
+//     "/assets/banner1.jpg",
+//     "/assets/banner2.jpg",
+//     "/assets/banner3.jpg",
+//     "/assets/banner4.jpg",
+//     "/assets/banner5.jpg"
+//   ],
+//   mobile_banners: [
+//     "/assets/mobile1.jpg",
+//     "/assets/mobile2.jpg",
+//     "/assets/mobile3.jpg",
+//     "/assets/mobile4.jpg",
+//     "/assets/mobile5.jpg"
+//   ]
+// };
 
 export const features = [
   {
     icon: delivery_truck_icon,
     title: "Fastest Delivery",
-<<<<<<< HEAD
-    description: "Groceries delivered in under 30 minutes.",
-  },
-  {
-    icon: leaf_icon,
-    title: "Freshness Guaranteed",
-    description: "Fresh produce straight from the source.",
-=======
     description: "Plants and Home Decor delivered fast",
   },
   {
     icon: leaf_icon,
     title: "Quality Guaranteed",
     description: "Good Quality Products.",
->>>>>>> fcb18da (Initial commit with changes)
   },
   {
     icon: coin_icon,
     title: "Affordable Prices",
-<<<<<<< HEAD
-    description: "Quality groceries at unbeatable prices.",
-=======
     description: "Quality at unbeatable prices.",
->>>>>>> fcb18da (Initial commit with changes)
   },
   {
     icon: trust_icon,
@@ -332,7 +349,7 @@ export const dummyProducts = [
   {
     _id: "ek51j12k",
     name: "Apple 1 kg",
-    category: "Fruits",
+    category: "",
     price: 120,
     offerPrice: 110,
     image: [apple_image],
